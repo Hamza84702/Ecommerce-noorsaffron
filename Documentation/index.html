@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zairito - Laravel eCommerce System | Single vendor | eCommerce CMS</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand order-2 mr-auto ml-3 ml-lg-0" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler order-1" type="button" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="order-3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="btn custom-btn" href="#" target="_blank">Get It Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <aside class="left-menu">
+            <nav>
+                <ul>
+                    <!-- Menu Title -->
+                    <li class="left-menu-title">
+                        <h6>
+                            <a href="#getting-started">Getting started</a>
+                        </h6>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#introduction">
+                            <span>introduction</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#key-fatures">
+                            <span>Key Features</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#file-stricture">
+                            <span>folder structure</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#system-requirements">
+                            <span>system requirements</span>
+                        </a>
+                    </li>
+
+                    <!-- Menu Title -->
+                    <li class="left-menu-title">
+                        <h6>
+                            <a href="#how-to-install">How to install</a>
+                        </h6>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#live-server">
+                            <span>Installation Steps</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-title">
+                        <h6>
+                            <a href="#credentials">Credentials</a>
+                        </h6>
+                    </li>
+
+                    <!-- Menu Title -->
+                    <li class="left-menu-title">
+                        <h6>
+                            <a href="#user-menual-ov">Overview</a>
+                        </h6>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#as-owner">
+                            <span>Front Part</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#user-menual">
+                            <span>Admin Part</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-title">
+                        <h6>
+                            <a href="#admin-panel">Admin Panel</a>
+                        </h6>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#add-product">
+                            <span>Add Product</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#order-manage">
+                            <span>Order Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#admin-manage">
+                            <span>Admin Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#role-manage">
+                            <span>Role Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#currency-manage">
+                            <span>Currency Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#tax-manage">
+                            <span>Tax Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#delivery-charge-manage">
+                            <span>Delivery Charge</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#coupon-manage">
+                            <span>Coupon Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#social-login-manage">
+                            <span>Social Login Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#email-manage">
+                            <span>Email Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#language-manage">
+                            <span>Language Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#seo-manage">
+                            <span>SEO Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#blog-manage">
+                            <span>Blog Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#cms-manage">
+                            <span>CMS Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#page-manage">
+                            <span>Page Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#menu-manage">
+                            <span>Menu Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#payment-manage">
+                            <span>Payment Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#sitemap-manage">
+                            <span>Sitemap Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#slider-manage">
+                            <span>Advertise & Sliders</span>
+                        </a>
+                    </li>
+                    <li class="left-menu-item">
+                        <a href="#theme-manage">
+                            <span>Theme Management</span>
+                        </a>
+                    </li>
+                    <li class="left-menu-item">
+                        <a href="#banner">
+                            <span>Banner</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-title">
+                        <h6>
+                            <a href="#customer-panel">Customer Panel</a>
+                        </h6>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#cus-signin-manage">
+                            <span>Sign In</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#cus-signup-manage">
+                            <span>Sign Up</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#cus-profile-manage">
+                            <span>Profile Management</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#cus-my-order-manage">
+                            <span>My Orders</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#cus-review-manage">
+                            <span>Reviews</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-title">
+                        <h6>
+                            <a href="#quick-features">Features</a>
+                        </h6>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#track-order">
+                            <span>Track Order</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#add-to-wishlist">
+                            <span>Add To Wishlist</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#add-to-compare">
+                            <span>Add To Compare</span>
+                        </a>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#purchase-product">
+                            <span>Purchase</span>
+                        </a>
+                    </li>
+
+                    <!-- Menu Title -->
+                    <li class="left-menu-title">
+                        <h6>
+                            <a href="#release-log">Thank you</a>
+                        </h6>
+                    </li>
+
+                    <li class="left-menu-item">
+                        <a href="#release-log">
+                            <span>release log</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <aside class="main-content-area">
+            <div class="main-content container-fluid">
+                <!-- ============== Big Title Section ============================ -->
+                <div class="mb-40 pb-40 border-bottom">
+                    <h3 id="getting-started" class="first-title">Zairito - Laravel eCommerce System | Single vendor |
+                        eCommerce CMS</h3>
+
+                </div>
+
+                <!-- ============== Section ============================ -->
+                <section>
+                    <h4 id="introduction" class="second-title">introduction</h4>
+                    <p>
+                        Zairito is a single vendor laravel ecommerce application with <strong>selling multiple types
+                            products</strong>, <strong>various payment gateway integration</strong>. It provides guest
+                        checkout and order tracking. It
+                        provides very nice user experience to use this application. A nice and super easy
+                        customizable admin panel is attached. It's a nice place to buy-sell physical, digital,
+                        affiliates and licenced products..
+                        <br>
+                        <br>
+                    </p>
+                </section>
+
+                <!-- ============== Section ============================ -->
+                <section>
+                    <h4 id="key-fatures" class="second-title">Key Features</h4>
+                    <ul class="right">
+                        <li>Easy <strong>installation</strong> process</li>
+                        <li>Fully <strong>responsive</strong> and <strong>dynamic</strong> admin dashboard</li>
+                        <li>Fully <strong>responsive</strong> and <strong>dynamic</strong> customer dashboard</li>
+                        <li>Easy to signup & signin</li>
+                        <li>Social Login</li>
+                        <li>Forgot password</li>
+                        <li><strong>Selling</strong> multiple types of products.</li>
+                        <li><strong>Guest</strong> checkout</li>
+                        <li><strong>Payment</strong> process by Paypal, Stripe, Razorpay, Sslcommerz, Bank Transfer,
+                            Cash
+                            on
+                            Delivery etc.</li>
+                        <li>Dynamic <strong>wishlist & cart</strong></li>
+                        <li>Product <strong>comparison</strong></li>
+                        <li>Order <strong>tracking</strong></li>
+                        <li>Awesome <strong>product filter</strong></li>
+                        <li>Good looking & user friendly <strong>front-end</strong></li>
+                        <li>Easy to manage site <strong>contents</strong></li>
+                        <li>Managing <strong>Users</strong></li>
+                        <li>Managing <strong>subscriptions</strong></li>
+                        <li>Managing <strong>social media, contact</strong> etc.</li>
+                    </ul>
+                </section>
+
+                <!-- ============== Section ============================ -->
+                <section>
+                    <h4 id="file-stricture" class="second-title">folder structure</h4>
+                    <ul class="folder">
+                        <li>
+                            'Zairito' is bundled with folders:
+                            <ul>
+                                <li>Main Files</li>
+                                <li>Documentation</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <!-- ============== Section ============================ -->
+                <section>
+                    <h4 id="system-requirements" class="second-title">system requirements</h4>
+                    <p>The application has a few system requirements, so you will need to make sure your server meets
+                        the following requirements: </p>
+                    <ul class="right">
+                        <li>Laravel >=8.0</li>
+                        <li>PHP >= 7.4.0</li>
+                        <li>MySQL 5.7+</li>
+                        <li>Intl PHP Extension</li>
+                        <li>OpenSSL PHP Extension</li>
+                        <li>PDO PHP Extension</li>
+                        <li>Mbstring PHP Extension</li>
+                        <li>Tokenizer PHP Extension</li>
+                        <li>BCMAth PHP Extension</li>
+                        <li>XML PHP Extension</li>
+                        <li>Ctype PHP Extension</li>
+                        <li>JSON PHP Extension</li>
+                        <li>cURL PHP Extension</li>
+                        <li>Fileinfo PHP Extension</li>
+                        <li>GD PHP Extension</li>
+                        <li>ZIP PHP Extension</li>
+                    </ul>
+                    <p>PHP INI Requirement:</p>
+                    <ul class="right">
+                        <li>allow_url_fopen</li>
+                    </ul>
+                    <p>Server Requirement:</p>
+                    <ul class="right">
+                        <li>Terminal Access</li>
+                        <li>Eanble Cookies</li>
+                        <li>Enable PHP Sessions</li>
+                    </ul>
+                </section>
+
+                <!-- ============== Big Title Section ============================ -->
+                <div class="mb-40 pb-40 border-bottom">
+                    <h3 id="how-to-install" class="first-title">How to install</h3>
+                </div>
+
+                <!-- ============== Section ============================ -->
+                <section>
+                    <h4 id="live-server" class="second-title">Installation Steps</h4>
+                    <iframe width="580" height="376" src="https://www.youtube.com/embed/zJHf0spZQ5M"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <br>
+                    <br>
+                    <p>
+                        After you purchase <code>Zairito</code>, you will get a zip file. Extracting the zip file you
+                        will get an <code>main.zip</code> file. You have to upload <code>main.zip</code> in your server
+                        and extract it.
+                    </p>
+                    <p>
+                        <strong>follow the instruction below</strong>
+                    </p>
+
+                    <ul class="right">
+                        <li>
+                            <b>If you upload it in <code>public_html</code> folder, then visit
+                                <code>your_domain_name.com</code> in browser</b>
+                        </li>
+                        <li>
+                            <b>If you upload it in a folder in <code>public_html</code> folder, then visit
+                                <code>your_domain_name.com/folder_name</code> in browser. </b>
+                        </li>
+                        <li>
+                            <b>If you upload it in your created <code>subdomain</code> folder, then visit
+                                <code>your_subdomain_name.com</code> in browser. </b>
+                        </li>
+                        <li>
+                            <b>If you upload it in a <code>folder</code> in your created <code>subdomain</code> folder,
+                                then visit <code>your_subdomain_name.com/folder_name</code> in browser. </b>
+                        </li>
+                        <li>
+                            <b>Create <code>database</code>. </b>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <!-- ============== Section ============================ -->
+                <section>
+                    <ul class="right">
+                        <li>After you enter your website URL in your browser you will see a welcome page of <strong>
+                                Installer</strong>. </li>
+                        <li>
+                            You will be shown a list of extensions required to run this software. If all the extensions
+                            have <strong>green "Ok" status</strong>. If any extension has <strong>red "Error"
+                                status</strong>, then you need to install the extension in your server first.
+                            <br><br>
+                            <img src="images/install/wizard/12.png" alt="" class="mw-mh-580-560"> <br> <br>
+                        </li>
+                        <li>
+                            You will be shown a list of folder locations. If all the folder has <strong>green "Ok"
+                                status</strong>. If any folder has <strong>red "Error" status</strong>, then you need to
+                            change the permission of the folder first.
+                            <br>
+                            If the scenario is like the <strong>picture</strong> below, then you will have to give
+                            permissions to all those folders by accessing the directories. To do so-
+                            <br><br>
+                            <img src="images/install/wizard/13.png" alt="" class="mw-mh-580-560"> <br> <br>
+                            <ul class="right">
+                                <li>
+                                    Go to server, file path : <strong>/</strong>. You will see a folder named “routes”
+                                    and right click over it. Some options will pop-up on your screen. Select “Change
+                                    Permissions”. A dialog box will be in your screen where you will see the permission
+                                    is “755” but our required permission is “777”. To get our required permission click
+                                    check on <strong>Owner, Group, Others</strong> for <strong>Read, Write,
+                                        Exec</strong>. Then click on “Change”.
+                                    <br>
+                                    <img src="images/install/wizard/14.png" alt="" class="mw-mh-580-560"> <br> <br>
+                                </li>
+                                <li>Go to server, file path <strong>/</strong>. You will see a folder named “resources”
+                                    and right click over it. Follow the previous procedure to change permission. </li>
+                                <li>Go to server, file path <strong>/</strong>. You will see a folder named “public” and
+                                    right click over it. Follow the previous procedure to change permission. </li>
+                                <li>Go to server, file path <strong>/</strong>. You will see a folder named “storage”
+                                    and right click over it. Follow the previous procedure to change permission. </li>
+                                <li>Go to server, file path <strong>/</strong>. You will see a file named “.env” and
+                                    right click over it. Follow the previous procedure to change permission. </li>
+                            </ul>
+                        </li>
+                        <li> If all the extension and permission requirements are fulfilled then the page will show this
+                            interface- <br><br>
+                            <img src="images/install/wizard/1.png" alt="" class="mw-mh-580-560"> <br> <br>
+                        </li>
+                        <li>If you want automate installation then click <code>Next</code>.</li>
+                        <li> Input your <code>App Name</code> like 'Zairito' & <code>App URL</code> like
+                            'http://yourdomain.com'. <br><br>
+                            <img src="images/install/wizard/3.png" alt="" class="mw-mh-580-560"> <br> <br>
+                        </li>
+                        <li>
+                            Then fillup your <code>database connection</code> like <code>database host</code>,
+                            <code>database user</code>, <code>database name</code> & <code>database password</code>.
+                            <br><br>
+                            <img src="images/install/wizard/7.png" alt="" class="mw-mh-580-560"> <br> <br>
+                        </li>
+                        <li>
+                            If you need to connect with mail server then input <code>SMTP</code> field. <br><br>
+                            <img src="images/install/wizard/8.png" alt="" class="mw-mh-580-560"> <br> <br>
+                        </li>
+                        <li>
+                            Click to the <code>Next</code>.
+                        </li>
+                        <li>
+                            If you fill all the mandatory field and input the right credentials then you will redirect
+                            to the home page automaticly.
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="credentials" class="second-title">Credentials for Demo</h4>
+
+                    <ul class="right">
+                        <li>
+                            For admin: email <code>admin@gmail.com</code>, password <code>123456</code>.
+                        </li>
+                        <li>
+                            For customer: email <code>user1@gmail.com</code>, password <code>123456</code>.
+                        </li>
+                        <li>
+                            Paypal Credentials: Email: <code>buyertanvir@test.com</code>, Password:
+                            <code>12345678</code>.
+                        </li>
+                        <li>
+                            Stripe Credentials: Card No: <code>4242424242424242</code>.
+                        </li>
+                        <li>
+                            Razorpay Credentials: Card No: <code>4111111111111111</code>.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- ============== Big Title Section ============================ -->
+                <!-- <div class="mb-40 pb-40 border-bottom">
+                    <h3 id="log-in" class="first-title">Log in</h3>
+                </div> -->
+
+                <!-- ============== Big Title Section ============================ -->
+                <div class="mb-40 pb-40 border-bottom">
+                    <h3 id="user-menual-ov" class="first-title">Overview</h3>
+                </div>
+
+                <!-- ============== Section ============================ -->
+                <section>
+                    <h4 id="as-owner" class="second-title">Overview - <small>Front Side</small></h4>
+                    <p>In the front page, you can see latest products, top products, add to wishlist, compare, cart,
+                        purchasing products etc. There are a lot of
+                        sections. Shop section is mainly display of categories and brand products. About Us is mainly
+                        the platforms description. Blog section is the content page of ecommerce marketplace news which
+                        is uploaded by admin/blogger.
+
+                    </p>
+                    <ul>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Home One <small>Front Side</small></h4>
+                            <img src="images/index/1.png" class="mw-mh-580-560" alt=""> <br> <br>
+                            <h4 id="as-owner" class="second-title">Home Two <small>Front Side</small></h4>
+                            <img src="images/index/home2.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Signin <small>Front Side</small></h4>
+                            <p>Signin page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/login.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Signup <small>Front Side</small></h4>
+                            <p>Signup page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/signup.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Shopping Cart <small>Front Side</small></h4>
+                            <p>Shopping Cart page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/shopping-cart.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Wishlist <small>Front Side</small></h4>
+                            <p>Wishlist page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/wishlist.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Compare <small>Front Side</small></h4>
+                            <p>Compare page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/compare.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">About Us <small>Front Side</small></h4>
+                            <p>About Us page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/about-us.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Terms & Conditions <small>Front Side</small></h4>
+                            <p>Terms & Conditions page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/terms.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Privacy Policy <small>Front Side</small></h4>
+                            <p>Privacy Policy page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/privacy.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Shipping & Return <small>Front Side</small></h4>
+                            <p>Shipping & Return page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/return.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">FAQ <small>Front Side</small></h4>
+                            <p>FAQ page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/faq.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Refund Policy <small>Front Side</small></h4>
+                            <p>Refund Policy page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/refund.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Products <small>Front Side</small></h4>
+                            <p>Products page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/all-products.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <img src="images/index/all-products-l.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Product Single <small>Front Side</small></h4>
+                        </li>
+                        <li>
+                            <p>Product Single Page One</p>
+                            <img src="images/index/product-single1.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <p>Product Single Page Two</p>
+                            <img src="images/index/product-single2.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Blogs <small>Front Side</small></h4>
+                            <p>Blogs page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/blogs.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Single Blog <small>Front Side</small></h4>
+                            <p>Single Blog page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/single-blog.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Contact Us <small>Front Side</small></h4>
+                            <p>Contact Us page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/contact-us.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Track Order <small>Front Side</small></h4>
+                            <p>Track Order page</p>
+                        </li>
+                        <li>
+                            <img src="images/index/track-order.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                        <li>
+                            <img src="images/index/track-order-single.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+
+                    </ul>
+                </section>
+                <!-- ============== Section ============================ -->
+
+                <!-- ============== Section ============================ -->
+                <section>
+                    <h4 id="user-menual" class="second-title">Overview <small>Admin part</small></h4>
+                    <ul>
+                        <li>Go to: <code>yourdomainname.com/admin/login</code> </li>
+                        <li>email: <code>admin@gmail.com</code> and password: <code>123456</code></li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4 id="as-owner" class="second-title">Signin <small>Admin Side</small></h4>
+                            <p>Signin page</p>
+                        </li>
+                        <li>
+                            <img src="images/admin/login.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+
+                        <li>
+                            <h4 id="as-owner" class="second-title">Dashboard <small>Admin Side</small></h4>
+                            <p>Dashboard page</p>
+                        </li>
+                        <li>
+                            <img src="images/admin/dashboard.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+
+                        <li>
+                            <h4 id="as-owner" class="second-title">Transactions <small>Admin Side</small></h4>
+                            <p>Transactions page</p>
+                        </li>
+                        <li>
+                            <img src="images/admin/transactions.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+
+                        <li>
+                            <h4 id="as-owner" class="second-title">Sitemaps <small>Admin Side</small></h4>
+                            <p>Sitemaps page</p>
+                        </li>
+                        <li>
+                            <img src="images/admin/sitemaps.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+
+                        <li>
+                            <h4 id="as-owner" class="second-title">Customer List <small>Admin Side</small></h4>
+                            <p>Customer List page</p>
+                        </li>
+                        <li>
+                            <img src="images/admin/customer-list.png" class="mw-mh-580-560" alt=""> <br> <br>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="mb-40 pb-40 border-bottom">
+                    <h3 id="admin-panel" class="first-title">Admin Panel</h3>
+                </div>
+
+                <section>
+                    <h4 id="add-product" class="second-title">Add Product</h4>
+
+                    <ul class="right">
+                        <li>In this platform you can add 4 types of products.</li>
+                        <li>For upload ing a product go to <code>Add Product</code></li>
+                        <li>
+                            It shows to choose your product type like <code>Physical</code>, <code>Digital</code>
+                            <br><br>
+                            <img src="images/admin/add-product.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Choose a type.</li>
+                        <li>
+                            Multiple fields are show belongs to each type. <br><br>
+                            <img src="images/admin/product-add-fields.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Fill the necessary fields and click to <code>Add</code> button.</li>
+                        <li>
+                            After successfully adding product you can see it from <code>Product List</code> <br><br>
+                            <img src="images/admin/product-list.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="order-manage" class="second-title">Order Management</h4>
+
+                    <ul class="right">
+                        <li>Order management of the platform is very easy.</li>
+                        <li>
+                            Go to <code>All Orders</code>. You can go to filtering menus like
+                            <code>Pending Orders</code>, <code>Processing Orders</code>, <code>Shipped Orders</code>,
+                            <code>Delivered Orders</code>, <code>Returned Orders</code>.
+                        </li>
+                        <li>
+                            It shows order list. <br><br>
+                            <img src="images/admin/order-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            In action, you can get three activities: showing invoice, changing order status, delete
+                            order.
+                        </li>
+                        <li>
+                            In invoice action you can see order details.<br><br>
+                            <img src="images/admin/invoice.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            In change status action admin can modify current order status. When admin modify current
+                            status order will go to necessary filtered menu.<br><br>
+                            <img src="images/admin/order-change-status.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Every time of changing status, customer will get email notification.</li>
+                        <li>
+                            For digital product send click <code>Send</code> button<br><br>
+                            <img src="images/admin/digital-send.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            It will take to email sending page. Click to <code>Send</code> button.<br><br>
+                            <img src="images/admin/digital-email.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="admin-manage" class="second-title">Admin Management</h4>
+
+                    <ul class="right">
+                        <li>
+                            Go to <code>Admin List</code>. A list of admins has shown.<br><br>
+                            <img src="images/admin/admin-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            In action, admin can edit and admin user and block an admin.
+                        </li>
+                        <li>
+                            In edit action, admin can change name, email, password and role.<br><br>
+                            <img src="images/admin/edit-admin.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>For creating an admin type user, admin have to <code>Add Admin</code></li>
+                        <li>
+                            Fill necessary admin fields like name, email, password role and click <code>Add</code>
+                            button. <br><br>
+                            <img src="images/admin/add-admin.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="role-manage" class="second-title">Role Management</h4>
+
+                    <ul class="right">
+                        <li>In this platform admin can create roles, assign a role to other admin.</li>
+                        <li>By default, <code>Super Admin</code> is the main role of this platform. That means super
+                            admin will get all the permissions.</li>
+                        <li>
+                            Go to <code>Roles</code>. A list of existing roles has shown.<br><br>
+                            <img src="images/admin/role-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            Admin can edit and delete the roles. <br>
+                            <small>N.B.: Never delete super admin.</small>
+                        </li>
+                        <li>For creating new role go to <code>Add Role</code></li>
+                        <li>
+                            You have seen a list of permissions and role name is displayed.<br><br>
+                            <img src="images/admin/add-role.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Fill the <code>Name</code> field and checked necessary permissions of the role</li>
+                        <li>Then click <code>Add</code> button and it will created a new role.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="currency-manage" class="second-title">Currency Management</h4>
+
+                    <ul class="right">
+                        <li>Go to <code>Currency</code></li>
+                        <li>
+                            you can see a list of all currencies which is available for platform right now.<br><br>
+                            <img src="images/admin/currency-list.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>By default, USD is the main currency so no one can edit this from admin panel.</li>
+                        <li>
+                            All the others currencies are editable and admin can edit its currency, iso, symbol and
+                            conversion rate.
+                            <br><br>
+                            <img src="images/admin/currency-edit.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>For creating new currency, click <code>Add Currency</code> button.</li>
+                        <li>
+                            A popup will show like below image:<br><br>
+                            <img src="images/admin/currency-add.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Fill all fields and click <code>Add</code> button.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="tax-manage" class="second-title">Tax Management</h4>
+
+                    <ul class="right">
+                        <li>Go to <code>Tax</code></li>
+                        <li>
+                            you can see a list of all tax status which is available for platform right now.<br><br>
+                            <img src="images/admin/tax-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Admin can add a tax value of a country and edit it later.</li>
+                        <li>
+                            For adding tax status of a country click <code>Add</code> button. It will show a popup like
+                            this:
+                            <br><br>
+                            <img src="images/admin/add-tax.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Fill all fields and click <code>Add</code> button.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="delivery-charge-manage" class="second-title">Delivery Charge Management</h4>
+
+                    <ul class="right">
+                        <li>Go to <code>Delivery Charge</code></li>
+                        <li>
+                            you can see a list of all delivery charge list which is available for platform right
+                            now.<br><br>
+                            <img src="images/admin/dc-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Admin can add a delivery charge of a country and edit it later.</li>
+                        <li>
+                            For adding delivery charge of a country click <code>Add</code> button. It will show a popup
+                            like this:
+                            <br><br>
+                            <img src="images/admin/dc-add.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Fill all fields and click <code>Add</code> button.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="coupon-manage" class="second-title">Coupon Management</h4>
+
+                    <ul class="right">
+                        <li>Go to <code>Coupon Code</code></li>
+                        <li>
+                            you can see a list of all coupon code list which is available for platform right
+                            now.<br><br>
+                            <img src="images/admin/coupon-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Admin can add a coupon code and edit it later.</li>
+                        <li>
+                            For adding coupon code click <code>Add</code> button. It will show a page like this:
+                            <br><br>
+                            <img src="images/admin/add-coupon.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Fill all fields and click <code>Add</code> button.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="social-login-manage" class="second-title">Social login Management</h4>
+
+                    <ul class="right">
+                        <li>Go to <code>CMS/General Settings</code></li>
+                        <li>
+                            Here is a portion of social login.<br><br>
+                            <img src="images/admin/social-login.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Fill necessary fields and click <code>Update</code> button.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="email-manage" class="second-title">Email Management</h4>
+
+                    <ul class="right">
+                        <li>Go to <code>CMS/General Settings</code></li>
+                        <li>
+                            Here is a portion of email.<br><br>
+                            <img src="images/admin/email-manage.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Fill necessary fields and click <code>Update</code> button.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="language-manage" class="second-title">Language Management</h4>
+
+                    <ul class="right">
+                        <li>Go to <code>CMS/Languages</code></li>
+                        <li>
+                            Here you see a list of admin.<br><br>
+                            <img src="images/admin/lang-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            You can edit language as your want.<br><br>
+                            <img src="images/admin/edit-lang.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Platform support both LTR & RTL</li>
+                        <li>
+                            You can add and update static language string as well.<br><br>
+                            <img src="images/admin/lang-key.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="seo-manage" class="second-title">SEO Management</h4>
+
+                    <ul class="right">
+                        <li>Platform provides page by page seo which is very important for an ecommerce.</li>
+                        <li>
+                            Go to <code>SEO Management</code> tab. It lands all the static pages list of menus. <br><br>
+                            <img src="images/admin/seo-menu.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            All the sections you can update title, description and keyword.<br><br>
+                            <img src="images/admin/seo-update.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="blog-manage" class="second-title">Blog Management</h4>
+
+                    <ul class="right">
+                        <li>Go to <code>Blog</code> section</li>
+                        <li>
+                            You can get a list of blogs which are currently available. <br><br>
+                            <img src="images/admin/blog-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>Admin can add, edit and delete a blog by his permissions.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="cms-manage" class="second-title">CMS Management</h4>
+
+                    <ul class="right">
+                        <li>Platform provides all the contents are dynamics.</li>
+                        <li>Admin can set default language and currency.</li>
+                        <li>
+                            Admin can brand his own logo and name by this platform <br><br>
+                            <img src="images/admin/cms-general.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            All the pages and components are dynamic like home page, abut us page, testimonial sections,
+                            faq etc. <br><br>
+                            <img src="images/admin/testimonial-list.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="page-manage" class="second-title">Page Management</h4>
+
+                    <ul class="right">
+                        <li>Platform allows multiple dynamic pages for users.</li>
+                        <li>Go to <code>Manage Pages</code>.</li>
+                        <li>
+                            Admin can get a list of current pages <br><br>
+                            <img src="images/admin/page-list.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            Admin can add, edit and delete a page <br><br>
+                            <img src="images/admin/page-edit.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="menu-manage" class="second-title">Menu Management</h4>
+
+                    <ul class="right">
+                        <li>Platform provides flexible menu management.</li>
+                        <li>There are three types of mennu: static, dynamic and sumnenu</li>
+                        <li>
+                            Admin can change only name of static menu. <br><br>
+                            <img src="images/admin/static-menu.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            Admin can add, edit and delete dyanmic menus <br><br>
+                            <img src="images/admin/update-dynamic-menu.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="payment-manage" class="second-title">Payment Gateway Management</h4>
+
+                    <ul class="right">
+                        <li>
+                            There are 4 types of payment gateway integrated in zairito: <code>Paypal</code>,
+                            <code>Stripe</code>, <code>Razorpay</code> <code>Bank Transfer</code> and
+                            <code>Sslcommerz</code> <br><br>
+                            <img src="images/admin/payment-gate-way-list.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            You can update all the credentials of payment gateway <br><br>
+                            <img src="images/admin/paypal-update.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="sitemap-manage" class="second-title">Sitemap Management</h4>
+
+                    <ul class="right">
+                        <li>
+                            admin can generate sitemap very easily from this platform <br><br>
+                            <img src="images/admin/sitemap-generate.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="slider-manage" class="second-title">Advertise & Slider</h4>
+
+                    <ul class="right">
+                        <li>
+                            admin update all advertisement and sliders very easily. <br><br>
+                            <img src="images/admin/advertise.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                            <img src="images/admin/slider.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h4 id="theme-manage" class="second-title">Theme Management</h4>
+
+                    <ul class="right">
+                        <li>
+                            Admin can chanage theme very easily.<br><br>
+                            <img src="images/admin/theme.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="banner" class="second-title">Banner</h4>
+
+                    <ul class="right">
+                        <li>
+                            admin can update banner very easily. (only theme two)<br><br>
+                            <img src="images/admin/banner.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="mb-40 pb-40 border-bottom">
+                    <h3 id="customer-panel" class="first-title">Customer Panel</h3>
+                </div>
+
+                <section>
+                    <h4 id="cus-signin-manage" class="second-title">SignIn</h4>
+
+                    <ul class="right">
+                        <li>
+                            Admin can signin by using email/password. Platform allow to user google and facebook login.
+                            <br><br>
+                            <img src="images/customer/signin.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="cus-signup-manage" class="second-title">SignUp</h4>
+
+                    <ul class="right">
+                        <li>
+                            Admin can quick signup by using name, email and password. <br><br>
+                            <img src="images/customer/signup.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="cus-profile-manage" class="second-title">Profile Management</h4>
+
+                    <ul class="right">
+                        <li>A customer can manage his profile very easily.</li>
+                        <li>
+                            Go to <code>user/profile</code> <br><br>
+                            <img src="images/customer/profile.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            For editing profile customer can click <code>Edit Profile</code>. It goes to edit page og
+                            profile. <br><br>
+                            <img src="images/customer/profile-edit.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="cus-my-order-manage" class="second-title">My Orders</h4>
+
+                    <ul class="right">
+                        <li>
+                            A customer can see and track his orders. <br><br>
+                            <img src="images/customer/my-orders.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                            <img src="images/customer/track-order.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="cus-review-manage" class="second-title">Reviews</h4>
+
+                    <ul class="right">
+                        <li>
+                            A customer can write review which they purchased. <br><br>
+                            <img src="images/customer/make0review.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            Customer can see his review <br><br>
+                            <img src="images/customer/see-review.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="mb-40 pb-40 border-bottom">
+                    <h3 id="quick-features" class="first-title">Features</h3>
+                </div>
+
+                <section>
+                    <h4 id="track-order" class="second-title">Track Order</h4>
+
+                    <ul class="right">
+                        <li>
+                            Anyone can track a order status by clicking <code>Track Order</code> <br><br>
+                            <img src="images/customer/track-order-global.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            After tracking order a dedicated page shown of necessary order: <br><br>
+                            <img src="images/customer/see-gl-order.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="add-to-wishlist" class="second-title">Add To Wishlist</h4>
+
+                    <ul class="right">
+                        <li>Anyone can add a product to wishlist which can be purchased later.</li>
+                        <li>
+                            Click to <code>Wishlist</code> button <br><br>
+                            <img src="images/customer/add-wishlist.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            You can see wishlist by clicking <code>Wishlist</code> icon of the header <br><br>
+                            <img src="images/customer/wishlist.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="add-to-compare" class="second-title">Add To Compare</h4>
+
+                    <ul class="right">
+                        <li>Anyone can add a product to compare where user can see product varies.</li>
+                        <li>
+                            Click to <code>Compare</code> button <br><br>
+                            <img src="images/customer/add-compare.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            You can see compare by clicking <code>Compare</code> icon of the header <br><br>
+                            <img src="images/customer/compare-list.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>An user can compare 2 products at a time.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 id="purchase-product" class="second-title">Purchase</h4>
+
+                    <ul class="right">
+                        <li>In this application there are two types of purchasing: <code>Customer Checkout</code>,
+                            <code>Guest Checkout</code>
+                        </li>
+                        <li>Customer can purchase by login their account on the other hand any user can purchase by
+                            giving email address without login.</li>
+                        <li>For purchasing, first add to cart list by clicking <code>Add To Cart</code>.</li>
+                        <li>
+                            User can check their cart list by clicking <code>Cart</code> or go to
+                            <code>cart/content</code> <br><br>
+                            <img src="images/customer/cart-content.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            In this portion user can use coupon code. <br><br>
+                            <img src="images/customer/use-coupon.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                            <small>N.B: Only login user can get coupon facility.</small><br><br>
+                        </li>
+                        <li>
+                            After all cart confirm user can checkout by clicking <code>Proceed To Checkout</code>
+                            <br><br>
+                            <img src="images/customer/proceed-checkout.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>
+                            In the checkout page user must have given the <code>Billing Address</code>,
+                            <code>Shipping Address</code> & <code>Payment Method</code> <br><br>
+                            <img src="images/customer/checkout.png" alt="" class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                        <li>After all checked clik to the <code>Place Order</code> button</li>
+
+                        <li>
+                            When order is placed it will show a thank you message and an email will send to the
+                            purchaser email address. <br><br>
+                            <img src="images/customer/thank-you.png" alt=""
+                                class="img-responsive mw-mh-580-560"><br><br>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- ============== Big Title Section ============================ -->
+                <div class="mb-40 pb-40">
+                    <h3 id="release-log" class="first-title">thank you</h3>
+                    <p>
+                        Again, thank you for purchasing Zairito. If you need some help, or support please use email or
+                        contact form via codecanyon <a href="https://codecanyon.net/user/zainiktheme"
+                            target="_blank">Profile site</a> <br>
+                        Hope you happy with the zairito, all the best with your business.
+                    </p>
+
+                    <h3 class="second-title">Change log</h3>
+
+                    <div class="code-block">
+                        Version 1.7 (2nd September 2022)
+                    </div>
+                    <section>
+                        <ul class="right">
+                            <li>Product issue fix</li>
+                            <li>Order issue fix</li>
+                            <li>About Page issue fix</li>
+                            <li>Wishlist update</li>
+                            <li>Comparelist update</li>
+                            <li>Minor issues fix</li>
+                        </ul>
+                    </section>
+
+                    <div class="code-block">
+                        Version 1.6 (23th July 2022)
+                    </div>
+                    <section>
+                        <ul class="right">
+                            <li>Text editor issue fix</li>
+                        </ul>
+                    </section>
+
+
+                    <div class="code-block">
+                        Version 1.5 (5th July 2022)
+                    </div>
+                    <section>
+                        <ul class="right">
+                            <li>Paypal payment issue fix</li>
+                        </ul>
+                    </section>
+
+
+                    <div class="code-block">
+                        Version 1.4 (28th June 2022)
+                    </div>
+                    <section>
+                        <ul class="right">
+                            <li>Theme 2 (two) add</li>
+                            <li>Blog Comment issue fix</li>
+                            <li>Currency issue fix</li>
+                            <li>Authenticate issue fix</li>
+                        </ul>
+                    </section>
+
+
+                    <div class="code-block">
+                        Version 1.3 (20th June 2022)
+                    </div>
+                    <section>
+                        <ul class="right">
+                            <li>Set default language add</li>
+                            <li>Set default currency add</li>
+                        </ul>
+                    </section>
+
+
+                    <div class="code-block">
+                        Version 1.2 (31th May 2022)
+                    </div>
+                    <section>
+                        <ul class="right">
+                            <li>Preload image upload issue fix</li>
+                            <li>Newsletter email validation issue fix</li>
+                            <li>User login issue fix</li>
+                            <li>Buynow issue fix</li>
+                            <li>Popup Image issue fix</li>
+                        </ul>
+                    </section>
+
+
+                    <div class="code-block">
+                        Version 1.1 (28th May 2022)
+                    </div>
+                    <section>
+                        <ul class="right">
+                            <li>Payment geteway integration (Sslcommerz)</li>
+                            <li>Logo Update issue fix</li>
+                            <li>Footer Category issue fix</li>
+                            <li>Subscribe Issue fix</li>
+                            <li>Search issue fix</li>
+                            <li>Contact info issue fix</li>
+                            <li>Home page about us banner issue fix</li>
+                        </ul>
+                    </section>
+
+                    <h3 class="second-title">release log</h3>
+                    <div class="code-block">
+                        Version 1.0 (29th April 2022)
+                    </div>
+
+                    <p>
+                        &copy;
+                        <script>var d = new Date(); document.write(d.getFullYear());</script> <a href="#"> Zairito</a>
+                    </p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="assets/js/jquery.2.2.4.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
