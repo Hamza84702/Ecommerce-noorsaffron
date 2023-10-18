@@ -942,7 +942,11 @@ ul {
     line-height: 1;
     font-weight: 500;
     text-transform: capitalize;
+
     color:;
+
+    color: white !important;
+ 
 
 }
 
@@ -1625,7 +1629,13 @@ ul {
 }
 
 .header-area-v2 .header-middle {
+
     padding: 3.5rem 0
+
+    padding: 3.5rem 0;
+  background: cadetblue;
+
+ 
 }
 
 .header-area-v2 .header-middle .header-right .btn-list {
