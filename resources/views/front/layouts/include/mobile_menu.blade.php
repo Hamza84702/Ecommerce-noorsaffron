@@ -1,5 +1,5 @@
 <!-- mobile-menu-area area start here  -->
-<div class="offcanvas offcanvas-start menu-offcanvas" tabindex="-1" id="offcanvasMobileMenu">
+<div class="offcanvas offcanvas-start menu-offcanvas text-white"  style="background:  rgb(76, 126, 128)" tabindex="-1" id="offcanvasMobileMenu">
     <div class="mobile-menu-area">
         <div class="offcanvas-header">
             <a class="brand-logo" href="{{ route('front') }}"><img class="brand-image"
@@ -11,14 +11,14 @@
             <form>
                 <div class="search-wrap">
                     <select class="form-select">
-                        <option selected>{{ __('Category') }}</option>
+                        <option class=" text-white" selected>{{ __('Category') }}</option>
                         @foreach (Category() as $item)
-                            <option value="{{ route('category.product', $item->id) }}">
+                            <option class=" text-white" value="{{ route('category.product', $item->id) }}">
                                 {{ langConverter($item->en_Category_Name, $item->fr_Category_Name) }}</option>
                         @endforeach
                     </select>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="mobilesearch" name="search"
+                        <input type="text" class="form-control text-white" id="mobilesearch" name="search"
                             placeholder="{{ __('Search Here') }}" />
                         <button type="button" class="search-btn"><i class="flaticon-search"></i></button>
                     </div>

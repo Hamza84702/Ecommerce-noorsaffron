@@ -13,7 +13,7 @@
 
 @section('subscribe_pop_up_modal')
     @if (!session()->has('dontshoW'))
-        <!-- Page Load Popup Modal End -->
+        <!-- Page Load Popup Modal End
         <div class="modal fade bd-example-modal-lg theme-modal" id="popUpModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--->
     @endif
     <!-- Page Load Popup Modal End -->
     <div id="DoNotSubscribe" data-url="{{ route('do.not.subscribe') }}"></div>

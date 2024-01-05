@@ -1,4 +1,5 @@
-<div>
+
+    <div style="background:  rgb(76, 126, 128)">
     <div class="mobile-header-area d-block d-lg-none">
         <div class="container">
             <div class="menu-wrap">

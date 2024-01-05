@@ -149,8 +149,9 @@
                             <!-- This is server side code. User can not modify it. -->
                             {!! productReview($product->id) !!}
                             <div class="product-price">
-                                <span class="regular-price">{{ currencyConverter($product->Price) }}</span>
                                 <span class="price">{{ currencyConverter($product->Discount_Price) }}</span>
+                                <span class="regular-price"><sup>{{ currencyConverter($product->Price) }}</sup></span>
+
                             </div>
                             <a href="javascript:void(0)" title="{{ __('Add To Cart') }}" class="add-cart addCart"
                                 data-id="{{ $product->id }}">{{ __('Add To Cart') }} <i

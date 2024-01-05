@@ -2,7 +2,31 @@
 <html lang="en">
 @include('front.layouts.include.head')
 @stack('post_css')
-
+<style>
+    .header-area-v2 .header-middle {
+    padding: 0.5rem 0;
+    background: cadetblue;
+}
+.header-area-v2 .header-bottom {
+    padding-bottom: 0rem;
+    border-bottom: 0px solid #EDEDED;
+}
+.single-gallery-0{
+    height: 795px;
+}
+.single-gallery-0 img{
+    height: 100% !important;
+}
+.single-grid-product .product-top .prdouct-btn-wrapper .single-product-btn .product-btn {
+    background:  rgb(76, 126, 128);
+}
+.single-grid-product .product-top .prdouct-btn-wrapper .single-product-btn .product-btn:hover {
+    background:  rgb(106, 174, 176);
+}
+.main-menu ul li a{
+    color: white !important;
+}
+</style>
 <body
     class="{{ session()->has('lang_dir') && session()->get('lang_dir') == 'rtl' ? 'direction-rtl' : 'direction-ltr' }}">
     <!-- Preloader Area Start -->
