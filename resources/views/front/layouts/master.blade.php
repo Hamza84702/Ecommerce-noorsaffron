@@ -12,16 +12,16 @@
     border-bottom: 0px solid #EDEDED;
 }
 .single-gallery-0{
-    height: 795px;
+    height: 500px;
 }
 .single-gallery-0 img{
-    height: 100% !important;
+    height: 800% !important;
 }
 .single-grid-product .product-top .prdouct-btn-wrapper .single-product-btn .product-btn {
-    background:  rgb(76, 126, 128);
+    background:  rgb(237, 61, 59, 0.83);
 }
 .single-grid-product .product-top .prdouct-btn-wrapper .single-product-btn .product-btn:hover {
-    background:  rgb(106, 174, 176);
+    background:  rgb(192, 18, 18);
 }
 .main-menu ul li a{
     color: white !important;

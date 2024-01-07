@@ -9,7 +9,7 @@
                                 <p class="contact-info">
                                     <i class="icon flaticon-phone"></i>
                                     {{ __('Call Us:') }}
-                                    {{ $allsettings['call_us'] }} {{ __('(FREE)') }}
+                                    {{ $allsettings['call_us'] }} {{ __('(24 Hrs)') }}
                                 </p>
                             </a>
                         </div>

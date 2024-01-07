@@ -971,7 +971,7 @@ ul {
 }
 
 .header-area .header-middle .header-middle-wrap .header-right .single-btn .header-btn.wishlist-btn .btn-left .count {
-    background-color: #FCA610
+    background-color: #382f30
 }
 
 .header-area .header-middle .header-middle-wrap .header-right .single-btn .header-btn.compare-btn .btn-left .count {
@@ -979,7 +979,7 @@ ul {
 }
 
 .header-area .header-middle .header-middle-wrap .header-right .single-btn .header-btn.cart-btn .btn-left .count {
-    background-color: #EF1B27
+    background-color: #382f30
 }
 
 .header-area .header-bottom {
@@ -1126,7 +1126,7 @@ ul {
 .header-area .header-middle .menu-area .main-menu .menu-item.mega-menu-parent .mega-menu-area {
     padding: 6rem 0;
     position: absolute;
-    background: #FFFFFF;
+    background: #b5473d;
     -webkit-box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
     box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
     z-index: 99;
@@ -5931,7 +5931,7 @@ ul {
 
 .image-gallery-area .single-gallery .gallery-image {
     width: 100%;
-    height: auto
+    height: 250px !important;
 }
 
 .image-gallery-area .single-gallery .popuo-overlay {

@@ -1052,7 +1052,7 @@ scrollUp
 }
 
 .header-area .header-middle .header-middle-wrap .header-right .single-btn .header-btn.wishlist-btn .btn-left .count {
-  background-color: #FCA610;
+  background-color: #382f30;
 }
 
 .header-area .header-middle .header-middle-wrap .header-right .single-btn .header-btn.compare-btn .btn-left .count {
@@ -1060,7 +1060,7 @@ scrollUp
 }
 
 .header-area .header-middle .header-middle-wrap .header-right .single-btn .header-btn.cart-btn .btn-left .count {
-  background-color: #EF1B27;
+  background-color: #382f30;
 }
 
 .header-area .header-bottom {
@@ -4287,7 +4287,7 @@ scrollUp
 
 .single-grid-product .product-top {
   position: relative;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
   overflow: hidden;
 }
 
@@ -4327,7 +4327,7 @@ scrollUp
   background-color: var(--primary-color);
 }
 
-.single-grid-product .product-top .prdouct-btn-wrapper {
+.single-grid-product .product-top {
   position: absolute;
   left: 0;
   right: 0;
@@ -4708,6 +4708,8 @@ scrollUp
   display: inline-block;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
+  max-height: 200px;
+  object-fit: fill;
 }
 
 .single-grid-product-v2 .product-top .product-flags {

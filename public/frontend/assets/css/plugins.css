@@ -6170,7 +6170,7 @@ i[class^=flaticon-]:before {
     font-family: flaticon !important;
     font-style: normal;
     font-weight: 400;
-    color: black !important;
+    color: rgb(244, 227, 1,1) !important;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
