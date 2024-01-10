@@ -14,6 +14,7 @@ use App\Models\Admin\OrderDetails;
 use App\Models\Admin\Product;
 use App\Models\Admin\Shipping;
 use App\Models\Currency;
+use App\Models\AbandonedCheckout;
 use App\Models\PaymentPlatform;
 use App\Models\SeoSetting;
 use App\Resolvers\PaymentPlatformResolver;
@@ -379,6 +380,25 @@ class CheckoutController extends Controller
         } else {
             return redirect()->back()->with('error', 'Payment Failed');
         }
+    }
+
+    public function saveAbandonedCheckout(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required|integer',
+            'product_ids' => 'required'
+        ]);
+
+        $checkout = AbandonedCheckout::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'product_ids' => $request->product_ids
+        ]);
+
+        return response()->json(['error' => false, 'message' => 'success', 'id' => $checkout->id]);
     }
 
     public function pay($amount, $discount, $currency, $payment_platform, $payment_method)
