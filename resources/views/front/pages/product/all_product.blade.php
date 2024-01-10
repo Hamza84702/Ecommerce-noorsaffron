@@ -211,10 +211,14 @@
                                                 <!-- This is server side code. User can not modify it. -->
                                                 {!! productReview($product->id) !!}
                                                 <div class="product-price">
+                                                    <!---<span
+                                                        class="regular-price">{{ currencyConverter($product->Price) }}</span>--->
                                                     <span
-                                                        class="regular-price">{{ currencyConverter($product->Price) }}</span>
-                                                    <span
-                                                        class="price">{{ currencyConverter($product->Discount_Price) }}</span>
+                                                        class="regular-price">{{ getPriceByCountry($product, $country_name) }}</span>
+                                                    <!---<span
+                                                        class="price">{{ currencyConverter($product->Discount_Price) }}</span>--->
+                                                        <span
+                                                        class="price">{{ discountPriceByCountry($product, $country_name) }}</span>
                                                 </div>
                                                 {{-- <div class="variable-single-item color-switch"> --}}
                                                 {{-- <div class="product-variable-color"> --}}

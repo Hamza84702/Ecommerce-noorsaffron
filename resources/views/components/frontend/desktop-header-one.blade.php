@@ -24,7 +24,7 @@
                                 </ul>
                             </div>
                             <div class="switcher-lang-currency">
-                                <div class="currency-switcher">
+                                <!-- <div class="currency-switcher">
                                     <span class="flag">{{ currencySymbol()[currency()] }}</span>
                                     <a href="javascript:void(0)" class="currency">{{ currency() }} <i
                                             class="fas fa-angle-down"></i></a>
@@ -36,7 +36,7 @@
                                             </li>
                                         @endforeach
                                     </ul>
-                                </div>
+                                </div> -->
                                 <div class="lang-switcher">
                                     @if (app()->getLocale() == 'en')
                                         <span class="flag"><img
@@ -131,7 +131,7 @@
                         class="menu-item menu-item-has-children {{ Route::is('front') || Route::is('front*') ? 'active' : '' }}">
                         <a class="menu-link" href="{{ route('front') }}">{{ staticMenuName('home') }}</a>
                     </li>
-                    <li class="menu-item mega-menu-parent">
+                    <!-- <li class="menu-item mega-menu-parent">
                         <a class="menu-link" href="#">{{ staticMenuName('shop') }} <i
                                 class="arrow-icon fas fa-angle-down"></i></a>
                         <div class="mega-menu-area">
@@ -167,7 +167,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
 
                     @foreach ($all_menus as $menu)
                         @if ($menu->submenus->count() == 0)
@@ -189,6 +189,9 @@
                             </li>
                         @endif
                     @endforeach
+                    <li class="menu-item {{ Route::is('all.product') || Route::is('all.product*') ? 'active' : '' }}"><a
+                            class="menu-link" href="{{ route('all.product') }}">{{ staticMenuName('Shop') }}</a>
+                    </li>
                     <li class="menu-item {{ Route::is('about.us') || Route::is('about.us*') ? 'active' : '' }}"><a
                             class="menu-link" href="{{ route('about.us') }}">{{ staticMenuName('about-us') }}</a>
                     </li>
@@ -200,17 +203,17 @@
 
                 </ul>
             </nav>
-                    <!---<div class="search-area">
+                    <div class="search-area">
                         <form action="{{ route('category.search') }}" method="get">
                             <div class="search-wrap">
-                                <select class="form-select" name="category">
+                                <!---<select class="form-select" name="category">
                                     <option value="" selected>--{{ __('Category') }}--</option>
                                     @foreach (Category() as $item)
                                         <option value="{{ $item->id }}">
                                             {{ langConverter($item->en_Category_Name, $item->fr_Category_Name) }}
                                         </option>
                                     @endforeach
-                                </select>
+                                </select>--->
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="search" name="search"
                                         placeholder="{{ __('Search Here') }}" />
@@ -219,7 +222,7 @@
                                 </div>
                             </div>
                         </form>
-                    </div>--->
+                    </div>
 
                     <div class="header-right">
 

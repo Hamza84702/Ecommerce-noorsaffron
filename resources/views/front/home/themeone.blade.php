@@ -50,7 +50,7 @@
 <!-- brads area start here  -->
 
 <!-- Popular Categories area start here  -->
-<div class="popular-categories-area section-bg section-top pb-100">
+<div class="popular-categories-area section-bg section-top pb-80">
     <div class="container">
         <div class="section-header-area">
             <div class="row">
@@ -112,7 +112,7 @@
         <div class="row">
             @foreach ($products as $product)
                 <div class="col-lg-3 col-md-4 col-sm-6" >
-                    <div class="single-grid-product" style="background-color:#f5f5f5;   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s;">
+                    <div class="single-grid-product" style="background-color:#fff;   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s;">
                         <div class="product-top">
                             <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img
                                     class="product-thumbnal"
@@ -146,8 +146,8 @@
                             <!-- This is server side code. User can not modify it. -->
                             {!! productReview($product->id) !!}
                             <div class="product-price">
-                                <span class="price">{{ currencyConverter($product->Discount_Price) }}</span>
-                                <span class="regular-price"><sup>{{ currencyConverter($product->Price) }}</sup></span>
+                                <span class="regular-price">{{ currencyConverter($product->Discount_Price) }}</span>
+                                <span class="price">{{ currencyConverter($product->Price) }}</span>
 
                             </div>
                             <a href="javascript:void(0)" title="{{ __('Add To Cart') }}" class="add-cart addCart"
@@ -260,7 +260,7 @@
                     <div class="row">
                         @foreach ($new_arrivals as $product)
                             <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="single-grid-product">
+                                <div class="single-grid-product" style="background-color:#fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s;">
                                     <div class="product-top">
                                         <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img
                                                 class="product-thumbnal"

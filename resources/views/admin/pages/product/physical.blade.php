@@ -140,9 +140,33 @@
                                                 @enderror
                                             </div>
                                             <div class="input__group mb-25">
-                                                <label for="price">{{ __('Price') }}</label>
+                                                <label for="price">{{ __('Price in USD') }}</label>
                                                 <input type="number" min="0" class="form-control" id="price"
                                                     name="price" value="{{ old('price') }}" placeholder="Price">
+                                                @error('price')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                            <div class="input__group mb-25">
+                                                <label for="price_in_aed">{{ __('Price in AED') }}</label>
+                                                <input type="number" min="0" class="form-control" id="price"
+                                                    name="price_in_aed" value="{{ old('price_in_aed') }}" placeholder="Price">
+                                                @error('price')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                            <div class="input__group mb-25">
+                                                <label for="price_in_pkr">{{ __('Price in PKR') }}</label>
+                                                <input type="number" min="0" class="form-control" id="price"
+                                                    name="price_in_pkr" value="{{ old('price_in_pkr') }}" placeholder="Price">
+                                                @error('price')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                            <div class="input__group mb-25">
+                                                <label for="price_in_sar">{{ __('Price in SAR') }}</label>
+                                                <input type="number" min="0" class="form-control" id="price"
+                                                    name="price_in_sar" value="{{ old('price_in_sar') }}" placeholder="Price">
                                                 @error('price')
                                                     <span class="text-danger">{{ $message }}</span>
                                                 @enderror
@@ -156,14 +180,14 @@
                                                     <span class="text-danger">{{ $message }}</span>
                                                 @enderror
                                             </div>
-                                            <div class="input__group mb-25">
+                                            <!-- <div class="input__group mb-25">
                                                 <label for="discount_price">{{ __('Discount Price') }}</label>
                                                 <input type="number" class="form-control" id="discount_price"
                                                     name="discount_price" value="{{ old('discount_price') }}" readonly>
                                                 @error('discount_price')
                                                     <span class="text-danger">{{ $message }}</span>
                                                 @enderror
-                                            </div>
+                                            </div> -->
 
                                             <div class="input__group mb-25">
                                                 <label for="en_about">{{ __('About') }}</label>

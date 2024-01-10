@@ -18,7 +18,7 @@
     height: 800% !important;
 }
 .single-grid-product .product-top .prdouct-btn-wrapper .single-product-btn .product-btn {
-    background:  rgb(237, 61, 59, 0.83);
+    background: rgb(9 9 9 / 82%);
 }
 .single-grid-product .product-top .prdouct-btn-wrapper .single-product-btn .product-btn:hover {
     background:  rgb(192, 18, 18);

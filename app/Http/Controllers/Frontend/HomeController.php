@@ -19,6 +19,7 @@ use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
+use GuzzleHttp\Client;
 
 class HomeController extends Controller
 {

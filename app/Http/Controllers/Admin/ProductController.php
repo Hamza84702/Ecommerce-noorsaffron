@@ -154,6 +154,7 @@ class ProductController extends Controller
             'license_name',
             'license_key',
             'affiliate_link',
+            'discount_price'
         ]);
         if (!empty($request->primary_image)) {
             $data['primary_image'] = fileUpload($request['primary_image'], ProductImage());
@@ -238,8 +239,11 @@ class ProductController extends Controller
             'Brand_Id' => $data['en_brand_name'],
             'Category_Id' => $data['en_category_name'],
             'Price' => $data['price'],
+            'price_in_aed' => $data['price_in_aed'],
+            'price_in_sar' => $data['price_in_sar'],
+            'price_in_pkr' => $data['price_in_pkr'],
             'Discount' => $data['discount'],
-            'Discount_Price' => $data['discount_price'],
+            'Discount_Price' => 0,
             'en_About' => $data['en_about'],
             'en_Description' => $data['en_description'],
             'en_ShippingReturn' => $data['en_shippingreturn'],

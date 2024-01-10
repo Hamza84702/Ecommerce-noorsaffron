@@ -48,6 +48,7 @@ class ProductController extends Controller
         $data['title'] = $seo->title;
         $data['description'] = $seo->description;
         $data['keywords'] = $seo->keywords;
+        $data['country_name'] = getUserCountryNameByIP(request()->ip());
         if ($products) {
             return view('front.pages.product.all_product', $data);
         }

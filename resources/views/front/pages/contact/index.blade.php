@@ -19,6 +19,15 @@
                                     {{ $allsettings['email'] }}
 
                                 </p>
+                                <hr>
+                                <p class="contact-info-content">
+                                    info@NoorSaffron.com
+                                </p>
+                                <hr>
+                                <p class="contact-info-content">
+                                    contact@NoorSaffron.com
+
+                                </p>
                             </div>
                         </div>
 
@@ -32,6 +41,18 @@
                                     {{ $allsettings['state'] }}
                                     {{ $allsettings['country'] }}
                                 </p>
+                                <hr>
+                                <p class="contact-info-content">
+                                    {{ $allsettings['address'] }} <br />
+                                    {{ $allsettings['state'] }}
+                                    {{ $allsettings['country'] }}
+                                </p>
+                                <hr>
+                                <p class="contact-info-content">
+                                    {{ $allsettings['address'] }} <br />
+                                    {{ $allsettings['state'] }}
+                                    {{ $allsettings['country'] }}
+                                </p>
                             </div>
                         </div>
 
@@ -40,6 +61,14 @@
                                 <img class="contact-info-icon"
                                     src="{{ asset('frontend/assets/images/contact-info-3.png') }}" alt="contact-info" />
                                 <h3 class="contact-info-title">{{ __('Phone') }}</h3>
+                                <p class="contact-info-content">
+                                    {{ $allsettings['call_us'] }}
+                                </p>
+                                <hr>
+                                <p class="contact-info-content">
+                                    {{ $allsettings['call_us'] }}
+                                </p>
+                                <hr>
                                 <p class="contact-info-content">
                                     {{ $allsettings['call_us'] }}
                                 </p>
