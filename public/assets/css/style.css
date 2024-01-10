@@ -1609,7 +1609,10 @@ scrollUp
 }
 
 .header-area-v2 .header-middle {
+
+
   background: cadetblue;
+ 
   padding: 3.5rem 0;
 }
 
@@ -2449,7 +2452,10 @@ scrollUp
 --------------------------------*/
 .mobile-header-area {
   padding: 15px 0;
+
+
   background: cadetblue;
+ 
 }
 
 .mobile-header-area .menu-wrap {

@@ -10,9 +10,9 @@
 */
 
 
-/*====================================
+/*=
   #fontawesome.css
-=====================================*/
+==*/
 /*!
  * Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6157,9 +6157,9 @@
     font-weight: 900
 }
 
-/*====================================
+/*=
   #flaticon.css
-=====================================*/
+==*/
 @font-face {
     font-family: flaticon;
     src: url(../fonts/flaticon.ttf?5e05682c12d513976dc987b9aeb48bbc) format("truetype"), url(../fonts/flaticon.woff?5e05682c12d513976dc987b9aeb48bbc) format("woff"), url(../fonts/flaticon.woff2?5e05682c12d513976dc987b9aeb48bbc) format("woff2"), url(../fonts/flaticon.eot?5e05682c12d513976dc987b9aeb48bbc#iefix) format("embedded-opentype"), url(../fonts/flaticon.svg?5e05682c12d513976dc987b9aeb48bbc#flaticon) format("svg")
@@ -6171,8 +6171,8 @@ i[class^=flaticon-]:before {
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
-    color:black !important;
-
+     color: white !important;
+    color: black !important;
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
@@ -6451,9 +6451,9 @@ i[class^=flaticon-]:before {
     content: "\f144"
 }
 
-/*====================================
+/*=
  #animate.css
-=====================================*/
+==*/
 
 
 /*!
@@ -10073,9 +10073,9 @@ i[class^=flaticon-]:before {
     }
 }
 
-/*====================================
+/*=
 #slick-1.8.1
-=====================================*/
+==*/
 .slick-slider {
     position: relative;
     display: block;
@@ -10181,9 +10181,9 @@ i[class^=flaticon-]:before {
     display: none
 }
 
-/*====================================
+/*=
   #Magnific Popup - v1.1.0
-=====================================*/
+==*/
 .mfp-bg {
     top: 0;
     left: 0;
