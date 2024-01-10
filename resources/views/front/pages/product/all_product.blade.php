@@ -174,7 +174,7 @@
                             <div class="row">
                                 @foreach ($products as $product)
                                     <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                                        <div class="single-grid-product">
+                                        <div class="single-grid-product"  style="background-color:#f5f5f5;   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s;">
                                             <div class="product-top">
                                                 <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img
                                                         class="product-thumbnal"
@@ -190,12 +190,7 @@
                                                     @endif
                                                 </div>
                                                 <ul class="prdouct-btn-wrapper">
-                                                    <li class="single-product-btn">
-                                                        <a class="product-btn CompareList"
-                                                            data-id="{{ $product->id }}"
-                                                            title="{{ __('Add To Compare') }}"><i
-                                                                class="icon flaticon-bar-chart"></i></a>
-                                                    </li>
+                                                   
                                                     <li class="single-product-btn">
                                                         <a class="product-btn MyWishList"
                                                             data-id="{{ $product->id }}"
@@ -216,10 +211,14 @@
                                                 <!-- This is server side code. User can not modify it. -->
                                                 {!! productReview($product->id) !!}
                                                 <div class="product-price">
+                                                    <!---<span
+                                                        class="regular-price">{{ currencyConverter($product->Price) }}</span>--->
                                                     <span
-                                                        class="regular-price">{{ currencyConverter($product->Price) }}</span>
-                                                    <span
-                                                        class="price">{{ currencyConverter($product->Discount_Price) }}</span>
+                                                        class="regular-price">{{ getPriceByCountry($product, $country_name) }}</span>
+                                                    <!---<span
+                                                        class="price">{{ currencyConverter($product->Discount_Price) }}</span>--->
+                                                        <span
+                                                        class="price">{{ discountPriceByCountry($product, $country_name) }}</span>
                                                 </div>
                                                 {{-- <div class="variable-single-item color-switch"> --}}
                                                 {{-- <div class="product-variable-color"> --}}

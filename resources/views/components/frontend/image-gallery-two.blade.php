@@ -9,11 +9,11 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12" style="height: 375px; margin-bottom:20px">
                             @foreach ($image_gallery->take(1) as $key => $item)
-                                <div class="single-gallery border-left">
-                                    <img class="gallery-image" src="{{ asset(ImageGallery() . $item->Image) }}"
-                                        alt="gallery" />
+                                <div class="single-gallery border-left h-100">
+                                    <img class="gallery-image h-100" src="{{ asset(ImageGallery() . $item->Image) }}"
+                                        alt="gallery" style="object-fit: cover" />
                                     <div class="popuo-overlay">
                                         <a class="popup-image" href="{{ asset(ImageGallery() . $item->Image) }}"><i
                                                 class="view-icon flaticon-view"></i></a>
@@ -23,8 +23,8 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             @foreach ($image_gallery->skip(1)->take(1) as $key => $item)
-                                <div class="single-gallery border-bottom">
-                                    <img class="gallery-image" src="{{ asset(ImageGallery() . $item->Image) }}"
+                                <div class="single-gallery border-bottom h-100">
+                                    <img class="gallery-image h-100" src="{{ asset(ImageGallery() . $item->Image) }}"
                                         alt="gallery" />
                                     <div class="popuo-overlay">
                                         <a class="popup-image" href="{{ asset(ImageGallery() . $item->Image) }}"><i
@@ -48,7 +48,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
+                    @php
+                        $i=0;
+                    @endphp
                     @foreach ($image_gallery->skip(4)->take(2) as $key => $item)
+
                         @if ($key == 0)
                             <div class="single-gallery border-top">
                                 <img class="gallery-image" src="{{ asset(ImageGallery() . $item->Image) }}"
@@ -59,7 +63,7 @@
                                 </div>
                             </div>
                         @else
-                            <div class="single-gallery">
+                            <div class="single-gallery single-gallery-{{ $i++ }}">
                                 <img class="gallery-image" src="{{ asset(ImageGallery() . $item->Image) }}"
                                     alt="gallery" />
                                 <div class="popuo-overlay">

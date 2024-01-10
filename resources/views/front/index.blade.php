@@ -13,7 +13,7 @@
 
 @section('subscribe_pop_up_modal')
     @if (!session()->has('dontshoW'))
-        <!-- Page Load Popup Modal End -->
+        <!-- Page Load Popup Modal End-->
         <div class="modal fade bd-example-modal-lg theme-modal" id="popUpModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -27,8 +27,8 @@
                                 <div class="row">
                                     <div class="col-lg-7 col-md-12">
                                         <div class="offer_modal_left">
-                                            <img src="{{ asset(IMG_LOGO_PATH . $allsettings['main_logo']) }}"
-                                                alt="logo">
+                                            <!-- <img src="{{ asset(IMG_LOGO_PATH . $allsettings['main_logo']) }}"
+                                                alt="logo"> -->
                                             <h3>{{ __('SUBSCRIBE TO NEWSLETTER') }}</h3>
                                             <p class="m-0">
                                                 {{ __('Subscribe For The Latest News.') }}
@@ -56,11 +56,11 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-5 col-md-12">
-                                        <div class="offer_modal_img d-none d-lg-flex">
-                                            <img src="{{ asset(IMG_ADVERTISE_PATH . $allsettings['popup_image']) }}"
-                                                alt="img">
-                                        </div>
+                                    <div class="offer_modal_img d-flex align-items-center justify-content-center">
+                                        <img src="{{ asset(IMG_ADVERTISE_PATH . $allsettings['popup_image']) }}" alt="img">
                                     </div>
+                                </div>
+
                                 </div>
 
                             </div>

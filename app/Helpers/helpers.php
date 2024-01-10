@@ -31,6 +31,7 @@ use App\Models\Language;
 use App\Models\Admin\OrderDetails;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use App\Models\Admin\SpecialOffer;
+use GuzzleHttp\Client;
 
 if (!function_exists('fileUpload')) {
     function fileUpload($img, $path, $user_file_name = null, $width = null, $height = null, $defaultFileName = null)
@@ -802,5 +803,83 @@ if (!function_exists('validDigitalSend')) {
             array_push($order_types, $od->product->type);
         }
         return in_array(PRODUCT_DIGITAL, $order_types);
+    }
+}
+
+if (!function_exists('getUserCountryNameByIP')) {
+    function getUserCountryNameByIP($ip = '')
+    {
+        if(!$ip){
+            $country = 'US';
+        } else{
+            $client = new Client();
+            $response = $client->get("https://ipinfo.io/{$ip}?token=81b2489c159d88");
+            $data = json_decode($response->getBody());
+            $country = $data->country ?? 'US';
+        }
+        
+        return $country;
+    }
+}
+
+if (!function_exists('getPriceByCountry')) {
+    function getPriceByCountry($product, $countryname = 'US')
+    {
+        if($product){
+            switch ($countryname) {
+                case 'AE':
+                    $price = 'AED ' . $product->price_in_aed;
+                    break;
+
+                case 'PK':
+                    $price = 'PKR ' . $product->price_in_pkr;
+                    break;
+                        
+                case 'SA':
+                    $price = 'SAR ' . $product->price_in_sar;
+                    break;        
+                
+                default:
+                   $price = '$ ' . $product->Price;
+                    break;
+            }
+        }
+        
+        return $price;
+    }
+}
+
+if (!function_exists('discountPriceByCountry')) {
+    function discountPriceByCountry($product, $countryname = 'US')
+    {
+        if($product){
+            switch ($countryname) {
+                case 'AE':
+                    $discount_price = $product->price_in_aed * $product->Discount / 100;
+                    $discounted_price = $product->price_in_aed - $discount_price;
+                    $discounted_price = 'AED ' . intval($discounted_price) . '.00';
+                    break;
+
+                case 'PK':
+                    $discount_price = $product->price_in_pkr * $product->Discount / 100;
+                    $discounted_price = $product->price_in_pkr - $discount_price;
+                    $discounted_price = 'PKR ' . intval($discounted_price) . '.00';
+                    break;
+                        
+                case 'SA':
+                    $discount_price = $product->price_in_sar * $product->Discount / 100;
+                    $discounted_price = $product->price_in_sar - $discount_price;
+                    $discounted_price = 'SAR ' . intval($discounted_price) . '.00';
+                    break;        
+                
+                default:
+                   $discount_price = $product->Price * $product->Discount / 100;
+                    $discounted_price = $product->Price - $discount_price;
+                    $discounted_price = '$ ' . intval($discounted_price) . '.00';
+                    break;
+            }
+        }
+        
+        return $discounted_price;
     }
 }

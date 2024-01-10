@@ -29,7 +29,7 @@ class ProductRequest extends FormRequest
             'en_category_name' => 'required',
             'price' => 'required',
             'discount' => 'required',
-            'discount_price' => 'required',
+            //'discount_price' => 'required',
             'primary_image' => 'required',
             'en_about' => 'required',
             'fr_about' => 'required',

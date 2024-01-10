@@ -5,7 +5,7 @@
             <div class="signle-slide"
                 style="background-image: url('{{ asset(SliderImage() . $slider->Background_Image) }}');">
                 <div class="container">
-                    <div class="row align-items-center">
+                    <!-- <div class="row align-items-center">
                         <div class="col-lg-6 col-6">
                             <div class="hero-slider-content text-center">
                                 <h2 class="slider-sub-title">
@@ -28,7 +28,7 @@
                                     alt="hero-banner-image" />
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         @endforeach
@@ -54,7 +54,7 @@
 <!-- brads area start here  -->
 
 <!-- Popular Categories area start here  -->
-<div class="popular-categories-area section-bg section-top pb-100">
+<div class="popular-categories-area section-bg section-top pb-80">
     <div class="container">
         <div class="section-header-area">
             <div class="row">
@@ -77,7 +77,7 @@
                     <a class="single-categorie" href="{{ route('category.product', $item->id) }}">
                         <div class="categorie-wrap">
                             <div class="categorie-icon">
-                                <i class="{{ $item->Category_Icon }}"></i>
+                                <i class="{{ $item->Category_Icon }}" style="color:red;"></i>
                             </div>
                             <div class="categorie-info">
                                 <h3 class="categorie-name">
@@ -86,7 +86,7 @@
                                     {{ langConverter($item->en_Description, $item->fr_Description) }}</h4>
                             </div>
                         </div>
-                        <i class="arrow flaticon-right-arrow"></i>
+                        <i class="arrow flaticon-right-arrow" style="color:#ce1f28 !important;"></i>
                     </a>
                 </div>
             @endforeach
@@ -115,30 +115,27 @@
         </div>
         <div class="row">
             @foreach ($products as $product)
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-grid-product">
+                <div class="col-lg-3 col-md-4 col-sm-6" >
+                    <div class="single-grid-product" style="background-color:#fff;   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s;">
                         <div class="product-top">
                             <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img
                                     class="product-thumbnal"
                                     src="{{ asset(ProductImage() . $product->Primary_Image) }}"
                                     alt="{{ __('product') }}" /></a>
                             <div class="product-flags">
-                                @if ($product->ItemTag)
+                                <!-- @if ($product->ItemTag)
                                     <span class="product-flag sale">{{ $product->ItemTag }}</span>
-                                @endif
+                                @endif -->
+<!--                                 
                                 @if ($product->Discount)
                                     <span
                                         class="product-flag discount">{{ __('-') }}{{ $product->Discount }}</span>
-                                @endif
+                                @endif -->
                             </div>
                             <ul class="prdouct-btn-wrapper">
-                                <li class="single-product-btn">
-                                    <a class="product-btn CompareList" data-id="{{ $product->id }}"
-                                        title="{{ __('Add To Compare') }}"><i class="icon flaticon-bar-chart"></i></a>
-                                </li>
-                                <li class="single-product-btn">
-                                    <a class="product-btn MyWishList" data-id="{{ $product->id }}"
-                                        title="{{ __('Add To Wishlist') }}"><i class="icon flaticon-like"></i></a>
+                                <li class="single-product-btn" style="color:white;">
+                                    <a class="product-btn MyWishList"  data-id="{{ $product->id }}"
+                                        title="{{ __('Add To Wishlist') }}"><i class="icon flaticon-like" style="text-color: white !important;"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -153,8 +150,9 @@
                             <!-- This is server side code. User can not modify it. -->
                             {!! productReview($product->id) !!}
                             <div class="product-price">
-                                <span class="regular-price">{{ currencyConverter($product->Price) }}</span>
-                                <span class="price">{{ currencyConverter($product->Discount_Price) }}</span>
+                                <span class="regular-price">{{ currencyConverter($product->Discount_Price) }}</span>
+                                <span class="price">{{ currencyConverter($product->Price) }}</span>
+
                             </div>
                             <a href="javascript:void(0)" title="{{ __('Add To Cart') }}" class="add-cart addCart"
                                 data-id="{{ $product->id }}">{{ __('Add To Cart') }} <i
@@ -266,7 +264,7 @@
                     <div class="row">
                         @foreach ($new_arrivals as $product)
                             <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="single-grid-product">
+                                <div class="single-grid-product" style="background-color:#fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: box-shadow 0.3s;">
                                     <div class="product-top">
                                         <a href="{{ route('single.product', $product->en_Product_Slug) }}"><img
                                                 class="product-thumbnal"
@@ -655,4 +653,6 @@
         </div>
     </div>
 </div>
+
+
 <!-- Testimonial ara end here  -->

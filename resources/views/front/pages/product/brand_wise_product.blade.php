@@ -162,9 +162,6 @@
                                                 </div>
                                                 <ul class="prdouct-btn-wrapper">
                                                     <li class="single-product-btn">
-                                                        <a class="product-btn CompareList" data-id="{{$product->id}}" title="{{__('Add To Compare')}}"><i class="icon flaticon-bar-chart"></i></a>
-                                                    </li>
-                                                    <li class="single-product-btn">
                                                         <a class="product-btn MyWishList" data-id="{{$product->id}}" title="{{__('Add To Wishlist')}}"><i class="icon flaticon-like"></i></a>
                                                     </li>
                                                 </ul>
