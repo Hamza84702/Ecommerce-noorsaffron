@@ -134,4 +134,65 @@
             }
         });
     }
+
+    var billing_phone = '';
+    var billing_email = '';
+    var billing_name = '';
+    $('#billing_phone').on('change', function () {
+        billing_phone = $(this).val();
+        if(billing_phone){
+            $(this).attr('marked', '1');
+        } else{
+            $(this).attr('marked', '0');
+        }
+
+        checkAbandonedFieldsMarked();
+    });
+
+    $('#billing_email').on('change', function () {
+        billing_email = $(this).val();
+        if(billing_email){
+            $(this).attr('marked', '1');
+        } else{
+            $(this).attr('marked', '0');
+        }
+
+        checkAbandonedFieldsMarked();
+    });
+
+    $('#billing_name').on('change', function () {
+        billing_name = $(this).val();
+        if(billing_name){
+            $(this).attr('marked', '1');
+        } else{
+            $(this).attr('marked', '0');
+        }
+
+        checkAbandonedFieldsMarked();
+    });
+
+    function checkAbandonedFieldsMarked(){
+        if($('#billing_phone').attr('marked') == '1' && $('#billing_email').attr('marked') == '1' &&  $('#billing_name').attr('marked') == '1'){
+            saveAbandonedCheckoutsData();                      
+        }
+
+        return;
+    }
+
+    function saveAbandonedCheckoutsData(){
+        $.ajax({
+            url: $('#abandoned-checkout-details').data('url'),
+            method: "POST",
+            data: {
+                email: billing_email,
+                phone: billing_phone,
+                name: billing_name,
+                product_ids: $('#cart-product-ids').data('key'),
+                _token: _token,
+            },
+            success: function (data) {
+                $('#abandoned-checkout-details-id').attr('data-value', data['id']);
+            }
+        });
+    }
 })(jQuery)

@@ -138,6 +138,7 @@ Route::group(['middleware' => ['is_user']], function () {
         Route::post('guest-order', [CheckoutController::class, 'guestCheckoutOrder'])->name('guest.checkout.order');
         Route::post('get-tax-amount', [CheckoutController::class, 'getTaxAmount'])->name('checkout.get_tax_amount');
         Route::get('thank-you', [CheckoutController::class, 'thankyouPage'])->name('checkout.thankyou_page');
+        Route::post('abandoned-checkout', [CheckoutController::class, 'saveAbandonedCheckout'])->name('checkout.abandoned_checkout_details');
     });
     Route::group(['prefix' => 'coupon'], function () {
         Route::post('apply', [CouponController::class, 'couponApply'])->name('apply.coupon');

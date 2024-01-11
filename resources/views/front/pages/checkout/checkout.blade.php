@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="checkout-form">
-                            <form method="post" {{-- action="{{ auth()->check() ? route('checkout.order') : route('guest.checkout.order') }}" --}} action="{{ route('checkout.order') }}"
+                            <form method="post" action="{{ auth()->check() ? route('checkout.order') : route('guest.checkout.order') }}"
                                 id="paymentForm">
                                 @csrf
                                 <div class="row">
@@ -56,6 +56,14 @@
                                             <input type="email" class="form-control" id="billing_email"
                                                 name="billing_email" placeholder="{{ __('Email Address') }}"
                                                 value="{{ isset($billing) ? $billing->Email ?? $billing->email : '' }}"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input type="phone" class="form-control" id="billing_phone"
+                                                name="billing_phone" placeholder="{{ __('Phone') }}"
+                                                value="{{ isset($billing) ? $billing->phne ?? $billing->phone : '' }}"
                                                 required />
                                         </div>
                                     </div>
@@ -387,8 +395,12 @@
                             <ul class="cart-product-list">
                                 @php
                                     $total = 0;
+                                    $product_ids = '';
                                 @endphp
                                 @foreach ($content as $item)
+                                    @php 
+                                        $product_ids .= $item->id . ',';
+                                    @endphp
                                     <li class="single-cart-product d-flex justify-content-between">
                                         <div class="product-info">
                                             <h3>{{ $item->qty }} {{ $item->name }}</h3>
@@ -409,7 +421,7 @@
                                         </div>
                                     </li>
                                 @endforeach
-
+                                @php $product_ids = rtrim($product_ids,","); @endphp
                             </ul>
                             <!-- Cart page bottom box -->
                             <div class="col-lg-12 col-md-12">
@@ -459,7 +471,10 @@
     <div id="stripe-key" data-key="{{ config('services.stripe.key') }}"></div>
     <div id="user-name" data-key="{{ auth()->check() ? auth()->user()->name : 'Guest User' }}"></div>
     <div id="user-email" data-key="{{ auth()->check() ? auth()->user()->email : 'guest@gmail.com' }}"></div>
+    <div id="cart-product-ids" data-key="{{$product_ids}}"></div>
     <div id="get-tax-amount" data-url="{{ route('checkout.get_tax_amount') }}"></div>
+    <div id="abandoned-checkout-details" data-url="{{ route('checkout.abandoned_checkout_details') }}"></div>
+    <div id="abandoned-checkout-details-id"></div>
     <!-- checkout page area end here  -->
     @push('post_script')
         <script src="https://js.stripe.com/v3/"></script>
